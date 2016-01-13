@@ -103,6 +103,7 @@ def crawlerNews(idInicial, idFinal):
 			noticia = Noticia(dados[0], dados[1], dados[2], dados[3], dados[4])
 			listaNoticias.append(noticia)
 
+		print idInicial
 		idInicial += 1
 
 def createXMLNoticias():
@@ -136,8 +137,8 @@ def createXMLNoticias():
 def main():
 	print("Rodando")
 
-	idFinal = 3
-	idInicial = 3
+	idInicial = 1
+	idFinal = 1270
 
 	crawlerNews(idInicial, idFinal)
 	print len(listaNoticias)
